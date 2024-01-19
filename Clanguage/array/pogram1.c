@@ -10,6 +10,8 @@ main()
 	printf("\nMAXIMUM NUMBER IS %d",m);
 	getch();
 }
+
+
 max(int x[],int k)
 {
 	int t,i;
