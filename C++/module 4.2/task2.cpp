@@ -16,18 +16,18 @@ class bank
                 strcpy(acctype, acc_type);
                 bal=balance;
         }
-        deposit();
-        withdraw();
-        display();
+        void deposit();
+        void withdraw();
+        void display();
 };
-bank::deposit()   //depositing an amount
+void bank::deposit()   //depositing an amount
 {
         int damt1;
         cout<<"\n Enter Deposit Amount = ";
         cin>>damt1;
         bal+=damt1;
 }
-bank::withdraw()  //withdrawing an amount
+void bank::withdraw()  //withdrawing an amount
 {
         int wamt1;
         cout<<"\n Enter Withdraw Amount = ";
@@ -36,7 +36,7 @@ bank::withdraw()  //withdrawing an amount
                 cout<<"\n Cannot Withdraw Amount";
         bal-=wamt1;
 }
-bank::display()  //displaying the details
+void bank::display()  //displaying the details
 {
         cout<<"\n ----------------------";
         cout<<"\n Accout No. : "<<acno;
@@ -64,5 +64,5 @@ int main()
         b1.deposit(); //
         b1.withdraw(); // calling member functions
         b1.display(); //
-        
+        return 0;
 }
