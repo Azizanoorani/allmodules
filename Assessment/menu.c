@@ -140,9 +140,11 @@ Concatenation()
 }
 
 main()
-{  int choice;
+{  int choice,i;
+    
 	 while(1)
     {
+    	mainmenu:
         printf("1. Reverse \n");
         printf("2. Palindrome\n");
         printf("3. Consant or Vowel\n");
@@ -189,6 +191,16 @@ main()
 	        Concatenation();
 	        break;
 	        	
+	   }
+	   printf("\nDo You want to continue press 1: ");
+        scanf("%d",&i);
+        if(i==1)
+       {
+        goto mainmenu;
+       }
+       else
+	   {
+        printf("Thank you");
 	   }
    }
 }
